@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Study Help club for students who need help in Stockholm, Sweden">
+    <meta name="keywords" content="Study Help, Student, Study, Stockholm, Sweden">
+    <meta http-equiv="refresh" content="10; url=index.html">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Study Help</title>
 </head>
+
 <body>
-    <h1>Hello World!!</h1>
+    <!--header and naviagation bar-->
+    <header>
+        <nav>
+            <a href="index.html">
+                <h1 id="logo">StudyHelp</h1>
+            </a>
+            <ul id="menu">
+                <li><a href="#contact" aria-label=": this link takes you to the contact section">Contact</a></li>
+                <li><a href="#sign-up" aria-label=": this link takes you to  section">Sign Up</a></li>
+                <li><a href="#about-us" aria-label=": this link takes you to the contact section">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--image with cover-text -->
+        <section id="outer">
+            <div id="my-image">
+                <div id="image-text">
+                    <h2>StudyHelp</h2>
+                    <h3>Whenever you need us</h3>
+                </div>
+            </div>
+        </section>
+
+        <!--about-us section with more information to the user-->
+        <section id="about-us">
+            <div class="center">
+                <h2>About Us</h2>
+                <p>At StudyHelp you can get help with your homework in several subjects</p>
+            </div>
+            <div id="application">
+                <p>How to find your Studybuddy:</p>
+                <ol class="space">
+                    <li>Register your interest and we will contact you within 24 hours</li>
+                    <li>Personal matching by studybuddy, we solve all the practicalities</li>
+                    <li>Meet your study buddy and succeed in your studies</li>
+                </ol>
+            </div>
+            
+            <div>
+                <table>
+                    <tr>
+                        <th>Class</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>high school</td>
+                        <td>39 euro per hour</td>
+                    </tr>
+                    <tr>
+                        <td>junior</td>
+                        <td>35 euro per hour</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!--this is the sign up form-->
+        <section id="sign-up">
+            <form action="signup.html" style="border:1px solid #ccc">
+                <div class="container">
+                    <h1>Sign Up</h1>
+                    <br>
+                    <p>Please fill in this form to create an account.</p>
+                    <br><br>
+                     
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember
+                        me</label>
+
+                    <br><br>
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue"
+                            aria-label="Click on terms and privacy">Terms & Privacy</a>.
+                    </p>
+                    <br><br>
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+
+                </div>
+            </form>
+        </section>
+
+        <!--Contact section with extra information to the user-->
+        <section id="contact">
+            <div>
+                <h2 class="text-center">Contact us</h2>
+
+                <div class="text-right contact-box-right">
+                    <h3>Get in touch</h3>
+
+                    <div>
+                        <span class="bold">Phone: </span>
+                        <span>015 345 678 910</span>
+                    </div>
+                    <div>
+                        <span class="bold">Email: </span>
+                        <span>email@StudyHelp.com</span>
+                    </div>
+                </div>
+                <div class="contact-box-center">
+                    <h3>Address</h3>
+                    <p>StudyHelp,<br>73 highway, Stockholm</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--footer/social links/fonts-->
+    <footer>
+        <ul class="social">
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener"
+                    aria-label="Find us on Facebook (link opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener"
+                    aria-label="Find us on Instagram (link opens in a new tab)"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </li>
+
+            <li><a href="https://www.twitter.com" target="_blank" rel="noopener"
+                    aria-label="Find us on Twitter (link opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+        </ul>
+
+        <!-- Fontawesome script -->
+        <script src="https://kit.fontawesome.com/5aef656d00.js" crossorigin="anonymous"></script>
+    </footer>
 </body>
+
 </html>

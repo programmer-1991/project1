@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Edu+NSW+ACT+Foundation&family=Habibi&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    font-size:20px;
+    font-family: Edu NSW ACT Foundation, sans-serif;
+    font-weight: 400;
+    color: #3a3a3a;
+
+}
+
+@media screen and (max-width: 950px){
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+}
+/*feedback*/
+#submission{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+#submission h1{
+    text-align: center;
+    color: white;
+}
+
+/*headings and logo*/
+h1, h2 {
+    font-family: Alkatra, sans-serif;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+#logo {
+    float: left;
+    font-size: 280%;
+    text-transform: uppercase;
+    margin-left: 10px;
+    color: #3a3a3a;
+}
+
+/*navigation links*/
+#menu, #logo {
+    line-height: 75px;
+}
+#menu {
+    font-size: 110%;
+    letter-spacing: 2px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 75px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    color: blue;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/*my-image and image-text*/
+#outer {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#image-text, #image-text h2{
+    color: red;
+}
+
+#my-image {
+    height: 380px;
+    width: 100%;
+    background: url('../images/pexels-andrea-piacquadio-3769981.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+
+    /*animates zoom effect on loading page*/
+    animation-name : zoom-image;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/*create the level of zoom of my image*/
+@keyframes zoom-image {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#image-text {
+    font-size: 100%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    float: right;
+    text-align: center;
+
+    width: 250px;
+    height: 150px;  
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-right: 65px;
+
+    background-color: rgb(60, 60, 60, .7);
+}
+
+/*about us*/
+#about-us {
+    /*responsive when not specify height*/
+    width:100%;
+    background-color: red;
+    font-size: 25px;
+}
+
+#about-us p {
+    color: black;
+    
+}
+#application {
+    margin-top: 20px;
+}
+.center {
+    text-align: center;
+}
+
+.space {
+    padding-left: 25px;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+table {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/*sign-up*/
+#sign-up {
+    background-color: black;
+    color: white;
+}
+#sign-up h1{
+    color: white;
+}
+.container {
+    /*responsive without specifying height*/
+    width: 100%;
+}
+
+/*contact us and*/
+ 
+#contact {
+    text-align: center;
+}
+
+/*footer: social links*/
+
+footer {
+    height: 150px;
+    background-color: grey;
+    margin-top: 50px;
+}
+.social{
+   text-align: center;
+   margin-top: 70px;
+}
+
+.social > li {
+    display:inline;
+}
+
+.social li {
+    font-size: 170%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
